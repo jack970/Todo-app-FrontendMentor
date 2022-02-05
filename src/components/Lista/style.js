@@ -116,7 +116,7 @@ export const Center = styled.div`
         font-weight: bold;
 
         :hover {
-            color: #fff;
+            color: ${props => props.theme.title === 'dark' ? '#fff' : '#000'};
         }
     }
 
@@ -132,7 +132,7 @@ export const FooterMobile = styled.div`
     margin-top: 1.3rem;
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 8px;
-    box-shadow: 0px 1px 14px 2px #0000001f;
+    box-shadow: 0px 9px 14px 2px #0000001c;
     button {
         font-size: .9rem;
     }

@@ -71,7 +71,8 @@ const GlobalStyle = createGlobalStyle`
     }
     input {
         font-family: 'Josefin Sans', sans-serif;
-        width: -webkit-fill-available;
+        box-sizing: border-box;
+        width: 100%;
         color: ${({ theme }) => theme.colors.text};
         background-color: ${({ theme }) => theme.colors.primary};
         border: none;
